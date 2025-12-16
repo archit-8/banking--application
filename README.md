@@ -51,7 +51,6 @@ banking-application-app-assigment
 │   └── application.properties
 │
 ├── pom.xml
-└── README.md
 
 
 
