@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Transaction Success</title>
+</head>
+<body>
+
+    <h1 th:text="${message}">Transaction Successful!</h1>
+
+    <p>
+        <strong>Account Number:</strong>
+        <span th:text="${account.accNo}"></span>
+    </p>
+
+    <p>
+        <strong>Updated Balance:</strong>
+        ₹ <span th:text="${account.balance}"></span>
+    </p>
+
+    <hr/>
+
+    <a th:href="@{/atm/login}">Back to Login</a>
+
+</body>
+</html>

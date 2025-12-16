@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Account Dashboard</title>
+</head>
+<body>
+
+    <h1>🏦 Account Dashboard</h1>
+
+    <h2>Welcome, <span th:text="${account.name}"></span>!</h2>
+
+    <hr/>
+
+    <p>
+        <strong>Account Number:</strong>
+        <span th:text="${account.accNo}"></span>
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        <span th:text="${account.email}"></span>
+    </p>
+
+    <p>
+        <strong>Phone:</strong>
+        <span th:text="${account.phoneNumber}"></span>
+    </p>
+
+    <p>
+        <strong>Current Balance:</strong>
+        ₹ <span th:text="${account.balance}"></span>
+    </p>
+
+    <hr/>
+
+    <h3>Actions</h3>
+
+    <ul>
+        <li>
+            <a th:href="@{/atm/deposit}">💰 Deposit</a>
+        </li>
+        <li>
+            <a th:href="@{/atm/withdraw}">🏧 Withdraw</a>
+        </li>
+        <li>
+            <a th:href="@{/atm/transfer}">🔁 Transfer</a>
+        </li>
+        <li>
+            <a th:href="@{/atm/login}">🚪 Logout</a>
+        </li>
+    </ul>
+
+</body>
+</html>

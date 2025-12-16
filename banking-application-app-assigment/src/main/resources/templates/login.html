@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form th:action="@{/atm/login}" th:object="${loginDTO}" method="post">
+        <label for="accountNo">Account Number:</label>
+        <input type="text" id="accountNo" th:field="*{accountNo}" /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" th:field="*{password}" /><br />
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
