@@ -1,9 +1,15 @@
 package com.example.demo.repository;
 
+import com.example.demo.model.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.model.Account;
+import java.util.Optional;
 
 public interface AccountRepository extends JpaRepository<Account, Long> {
-    // No need for findByAccNo() since accNo is ID
+
+    boolean existsByAccNo(Long accNo);
+
+   Optional< Account> findByAccNo(Long accNo);
+
+    boolean existsByEmail(String email);
 }

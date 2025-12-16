@@ -11,6 +11,20 @@ public class TransactionDTO {
 	private Long accountNo;
 	private BigDecimal amount;
 
+	public Long getAccountNo() {
+		return accountNo;
+	}
 
-    // getters and setters
+	public void setAccountNo(Long accountNo) {
+		this.accountNo = accountNo;
+	}
+
+	public BigDecimal getAmount() {
+		return amount;
+	}
+
+	public void setAmount(BigDecimal amount) {
+		this.amount = amount;
+	}
+// getters and setters
 }
